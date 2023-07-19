@@ -15,20 +15,37 @@ Verifique que en la consola sigan apereciendo los mensajes de log
 
 const boton = document.querySelector("button");
 
-boton.addEventListener("click", () => {
-    console.log("Respuesta evento click");
-    boton.className = "btnClick";
-})
 
-boton.addEventListener("mouseover", () => {
-    console.log("Respuesta evento mouseover");
-    boton.className = "btnOver";
-})
 
-boton.addEventListener("mouseout", () => {
-    console.log("Respuesta evento mouseout");
-    boton.className = "btnOut";
-})
+
+function handleClick(){
+    boton.onlcick = () => {console.log("Respuesta evento click"); boton.className = "btnClick"};    
+}
+
+function handleMouseOver(){
+    boton.mouseover = () => {console.log("Respuesta evento mouseover"); boton.className ="btnOver"};
+}
+
+function handleMouseOut () {
+    boton.mouseout = () => {console.log("Respuesta evento mouseout"); boton.className = "btnOut"};
+
+}
+
+
+// boton.addEventListener("on click", () => {
+//     console.log("Respuesta evento click");
+//     boton.className = "btnClick";
+// })
+
+// boton.addEventListener("mouseover", () => {
+//     console.log("Respuesta evento mouseover");
+//     boton.className = "btnOver";
+// })
+
+// boton.addEventListener("mouseout", () => {
+//     console.log("Respuesta evento mouseout");
+//     boton.className = "btnOut";
+// })
 
 
 /* 2 - Enunciado
